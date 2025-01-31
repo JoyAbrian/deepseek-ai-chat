@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ollama from "https://cdn.jsdelivr.net/npm/ollama"; // Assuming this is the correct import for Ollama API
+import ollama from "ollama/browser"; // Assuming this is the correct import for Ollama API
 import "./App.css";
 import ReceiverMessageBubble from "./components/ReceiverMessageBubble";
 import SenderMessageBubble from "./components/SenderMessageBubble";
@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="flex w-screen h-screen bg-slate-100 justify-center items-center">
       <div className="flex flex-col w-1/3 h-[99%] bg-white rounded-3xl my-5">
-
+      
         {/* Profile Section (Fixed) */}
         <div className="bg-blue-400 rounded-t-3xl w-full h-[10%] flex items-center pl-8">
           <img src="/bot.png" className="rounded-full w-[8%] bg-white" />
